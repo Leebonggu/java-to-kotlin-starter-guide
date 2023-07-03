@@ -47,8 +47,8 @@ fun startWithA(obj: Any): Boolean {
 
 fun judgeNumber(number: Int)  {
       when(number) {
-          1, 0, -1 -> println("HH")
-          else -> println("HH")
+          1, 0, -1 -> println("굿")
+          else -> println("베드")
       }
 }
 
