@@ -25,4 +25,33 @@ fun main() {
     for (i in 1..5 step 2) {
         println(i)
     }
+
+    fun solution(start: Int, end: Int): List<Int> {
+        val result = mutableListOf<Int>()
+
+        for (i in start downTo end) {
+            result.add(i)
+        }
+
+        println(result)
+        return result
+    }
+
+    fun solution2(myString: String, index_list: IntArray): String {
+        var answer: String = ""
+
+        index_list.forEach{ index ->
+            run {
+                println(myString[index])
+                answer = answer.plus(myString[index])
+            }
+        }
+
+        return answer
+    }
+
+
+    solution(1, 5)
+    val list = intArrayOf(16, 6, 5, 3, 12, 14, 11, 11, 17, 12, 7)
+    solution2("cvsgiorszzzmrpaqpe", list)
 }
