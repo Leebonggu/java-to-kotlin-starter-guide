@@ -31,7 +31,7 @@ public class Person(name: String, age: Int) {
         println("부생성자")
     }
 
-    fun isAdult(): Boolean {
+    fun isAdult2(): Boolean {
         return this.age >= 20;
     }
 
