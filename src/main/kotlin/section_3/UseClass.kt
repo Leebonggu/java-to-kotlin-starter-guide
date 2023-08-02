@@ -23,19 +23,17 @@ public class Person(name: String, age: Int) {
         if (age <= 0) {
             throw IllegalArgumentException("나이는 $age 일 수 없다!")
         }
-        println("초기화")
     }
 
     // 부생성자
     constructor(name: String): this(name, 1) {
-        println("부생성자")
     }
 
-    fun isAdult(): Boolean {
+    fun isAdult2(): Boolean {
         return this.age >= 20;
     }
 
-    val isAdult: Boolean
+    val isAdult3: Boolean
         get() {
             return this.age >= 20
         }
