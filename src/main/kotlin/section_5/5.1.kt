@@ -17,6 +17,18 @@ fun main() {
 
     val response = listOf("200 OK", "418 I'm a teapot", "500 Internal Server Error", "501 Internal Server Error")
     printProblemCounts(response)
+
+    run {
+        val t = people2.maxByOrNull { p: Person -> p.age }?.age
+        println(t)
+        println(42)
+    }
+
+    class Ref<T>(var value: T)
+    val count = Ref(0)
+    println(count.value)
+    val inc = { count.value++ }
+
 }
 data class Person(val name: String, val age: Int)
 
