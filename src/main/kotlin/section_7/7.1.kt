@@ -57,13 +57,13 @@ operator fun Point.get(index: Int): Int {
     }
 }
 
-class Foo {
-    val p: Type by Delegate()
-}
-
-class Delegate {
-    operator getValue()
-}
+//class Foo {
+//    val p: Type by Delegate()
+//}
+//
+//class Delegate {
+//    operator getValue()
+//}
 
 fun main() {
     val p1 = Point(10, 20)
